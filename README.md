@@ -1,5 +1,5 @@
 # downloader-thingy
-Black Equine file downloads – this is an obviously stupid name to avoid obvious keywords.
+Get and correctly rename Black Equine comic file downloads (this is an obviously stupid name to avoid keywords).
 
 
 This isn’t a program, it’s instructions on how to download files you’ve bought from a particular comic retailer that is a “black equine”.  It is also the worst kind of messy just-works shambles, with no effort beyond that.  It’s worked for me but no guarantees beyond that!
