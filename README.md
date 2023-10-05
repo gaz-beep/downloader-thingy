@@ -46,31 +46,31 @@ You should now have a tar file that has the jpgs in it (but not named jpg, but t
 
 Next you need this as a shell script –
 
-----
-#!/bin/bash
-#converts downloaded tar file to correct page order to make cbz
 
-INDEX=0
+	#!/bin/bash
+	#converts downloaded tar file to correct page order to make cbz
+	
+	INDEX=0
+	
+	cat manifest.json | grep src_image > tmp.txt
+	sed -i 's/"//' tmp.txt 
+	sed -i 's/"//' tmp.txt 
+	sed -i 's/"//' tmp.txt 
+	sed -i 's/"//' tmp.txt 
+	sed -i 's/      src_image: //' tmp.txt 
+	sed -i 's/,//' tmp.txt 
+	
+	while read p; do
+	   printf -v filename "%04d" $INDEX
+	   mv "$p" "$filename.jpg"
+	   ((INDEX++))
+	done <tmp.txt
 
-cat manifest.json | grep src_image > tmp.txt
-sed -i 's/"//' tmp.txt 
-sed -i 's/"//' tmp.txt 
-sed -i 's/"//' tmp.txt 
-sed -i 's/"//' tmp.txt 
-sed -i 's/      src_image: //' tmp.txt 
-sed -i 's/,//' tmp.txt 
+	rm manifest.json
+	rm manifest.jsonp
+	rm tmp.txt
 
-while read p; do
-   printf -v filename "%04d" $INDEX
-   mv "$p" "$filename.jpg"
-   ((INDEX++))
-done <tmp.txt
 
-rm manifest.json
-rm manifest.jsonp
-rm tmp.txt
-
-----
 
 (So paste all that into a text file, call it "rename-thingy.txt" then change the properties to make it executable (or "chmod +x rename-thingy.txt", then remember where it was so you can run it :)
 
