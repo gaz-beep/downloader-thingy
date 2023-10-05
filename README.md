@@ -2,7 +2,7 @@
 Get and correctly rename Black Equine comic file downloads (this is an obviously stupid name to avoid keywords).
 
 
-This isn’t a program, it’s instructions on how to download files you’ve bought from a particular comic retailer that is a “black equine”.  It is also the worst kind of messy just-works shambles, with no effort beyond that.  It’s worked for me but no guarantees beyond that!
+This isn’t a program, it’s instructions on how to download files you’ve bought from a particular comic retailer that is a “black equine”.  It is also the worst kind of messy just-works shambles, with no effort beyond that.  It’s worked for me but no guarantees and might stop at any time!
 
 Upside, this might be worth it because the images are actually 1800x2700 – so I think slightly better than downloading from the “big river” place.
 
