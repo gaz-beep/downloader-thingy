@@ -49,6 +49,7 @@ Next you need this as a shell script –
 
 	#!/bin/bash
 	#converts downloaded tar file to correct page order to make cbz
+ 	#run this in the folder that contains the unzipped image files
 	
 	INDEX=0
 	
@@ -75,7 +76,11 @@ Next you need this as a shell script –
 (So paste all that into a text file, call it "rename-thingy.txt" then change the properties to make it executable (or "chmod +x rename-thingy.txt", then remember where it was so you can run it :)
 
 
-Once you have “book.tar”, unzip (yes I know untar sorry) it onto its own folder, go the folder in the terminal, and run the shell script.
+Once you have “book.tar”, unzip (yes I know untar sorry) it onto its own folder
+
+Go the folder in the terminal, and run the shell script.
+
+The script needs to be run in the same folder as the untarred image files.
 
 All going well, it ought to rename the randomised file names to 001.jpg 002.jpg and so on.
 
